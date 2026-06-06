@@ -13,7 +13,6 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
   end
-
   # POST /posts
   def create
     @post = Post.new(post_params)
@@ -23,7 +22,6 @@ class PostsController < ApplicationController
       render :new
     end
   end
-
     # GET /posts/:id/edit
     def edit
       @post = Post.find(params[:id])
@@ -38,7 +36,6 @@ class PostsController < ApplicationController
         render :edit
       end
     end
-
     # DELETE /posts/:id
     def destroy
       @post = Post.find(params[:id])
