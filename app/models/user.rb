@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   # Validations
 
-  validates :name, :dob, :email, :phone_number, presence: true
+  validates :name, :dob, :email, :phone_number, :address, presence: true
 
   # Email format validation
   validates :email, 
