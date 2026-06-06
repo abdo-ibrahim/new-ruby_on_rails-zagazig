@@ -8,7 +8,6 @@ class UsersController < ApplicationController
 
   # GET /users/:id
   def show
-    
   end
 
   # GET /users/new
@@ -16,7 +15,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # POST /users/commit
+  # POST /users
   def create
     @user = User.new(user_params)
     if @user.save
@@ -24,13 +23,10 @@ class UsersController < ApplicationController
     else
       render :new
     end
-
-
   end
 
   # GET /users/:id/edit
   def edit
-
   end
 
   # PATCH/PUT /users/:id
